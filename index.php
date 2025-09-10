@@ -252,13 +252,15 @@ O amor desculpa tudo, crê tudo, espera tudo, suporta tudo. Ser Jovem é ser Bon
                         <div class="name fw-bold text-uppercase pt-2">São Domingos Sávio
 </div>              </div>
             </div>
-            <div class="swiper-buttons text-center mt-5">
+          
+          </div>
+          
+        </div>
+          <div class="swiper-buttons text-center mt-5">
               <button class="swiper-prev testimonial-arrow-prev me-2"><svg width="41" height="41"><use xlink:href="#arrow-left"></use></svg></button>
               <span>|</span>
               <button class="swiper-next testimonial-arrow-next ms-2"><svg width="41" height="41"><use xlink:href="#arrow-right"></use></svg></button>
             </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>

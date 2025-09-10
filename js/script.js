@@ -193,7 +193,7 @@
     const largura = document.body.scrollWidth;
     const altura = document.body.scrollHeight;
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 15; i++) {
       const img = document.createElement("img");
       img.src = imagens[Math.floor(Math.random() * imagens.length)];
       img.className = "decor";
@@ -202,7 +202,7 @@
       img.style.width = (50 + Math.random() * 100) + "px";
       img.style.top = Math.random() * altura + "px";
       img.style.left = Math.random() * largura + "px";
-      img.style.opacity = 0.2;
+      img.style.opacity = 0.4;
       img.style.pointerEvents = "none"; // não atrapalha cliques
 
       document.body.appendChild(img);
