@@ -1,1 +1,22 @@
+
+
+# Sistema de arquivos
+*.log
+*.DS_Store
+*.idea/
+*.vscode/
+node_modules/
+vendor/
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.swp
+
+# Configurações locais
 db.php
+
+# Cache
+cache/
+tmp/
+session/
