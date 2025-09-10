@@ -1,69 +1,96 @@
-Get PRO Here:
-https://templatesjungle.gumroad.com/l/vaso-interior-decor-ecommerce-website-template
+📖 Juventude Abel – Gincana Bíblica
 
-It is a free HTML CSS template by TemplatesJungle.com
-You can use this template as a starter template and start building as you require.
+Este repositório contém o código-fonte do site e do sistema de inscrições da Gincana Bíblica da Juventude Abel, evento realizado em setembro para jovens da comunidade.
 
-The code is consistent and can be easily maintained as we have followed a good coding standards. We want everyone to easily understand it and modify it according to their requirement. As the main goal of providing these templates is to give you something to work on before even starting.
+✨ Funcionalidades
+🔹 Parte pública
 
+Informações da gincana (atividades, datas, horários).
 
-FREE FOR BOTH PERSONAL AND COMMERCIAL USE
+Sessão de doação com links diretos para apoio.
 
-This HTML Template is provided by TemplatesJungle.com and is free to use in both personal and commercial projects as long as you don't remove our credit link in the footer.
+Galeria de fotos dinâmica (lida imagens de uma pasta automaticamente).
 
-However, you can remove the credit link by paying for No Attribution version of the template.
+🔹 Área administrativa
 
+Login seguro com senha criptografada.
 
-RIGHTS
+Validação de acesso com sessões.
 
-You are allowed to use it in your personal projects and commercial projects.
+Gerenciamento de inscrições:
 
-You can modify and sell it to your clients.
+Lista resumida (nome, idade, email, comunidade).
 
+Lista completa (telefone, alergias, medicamentos, data da inscrição).
 
-PROHIBITIONS
+Layout responsivo (tabelas viram cards no celular).
 
-You cannot remove the credit link which links back to templatesjungle.com.
+Confirmação por email enviada automaticamente ao inscrito.
 
-You are not permitted to resell or redistribute (paid or free) as it is. 
+🛠️ Tecnologias utilizadas
 
-You cannot use it to build premium templates, themes or any other goods to be sold on marketplaces.
+Frontend: HTML5, CSS3, Bootstrap 5, JavaScript (ES6).
 
-If you want to share the free resource in your blog, you must point it to original TemplatesJungle.com resource page. 
+Backend: PHP 7+ com MySQL.
 
-You cannot host the download file in your website.
+Email: mail() com template HTML para confirmação de inscrição.
 
+🚀 Como rodar o projeto
 
-SUPPORT
+Clone o repositório:
 
-You can contact us to report any bugs and errors in the template. We will try and fix them immediately although it's a free resource.
-
-Feel free to let us know about what you want to see in the future downloads. We will definitely give it a thought while creating our next freebie.
-
-
-CREDITS & REFERENCES
-
-https://getbootstrap.com/
-
-Stock Photos
-https://unsplash.com/
-https://www.freepik.com/
-https://www.pexels.com/
-
-Fonts
-Google fonts
-https://fonts.google.com/
-
-Icons
-https://icomoon.io/
-
-JQuery Plugins
-
-Swiper Slider - https://swiperjs.com/
-Slick Slider - https://kenwheeler.github.io/slick/
-Chocolat.js – a Free Lightbox Plugin -http://chocolat.insipi.de/
-Magnific Lightbox - https://github.com/dimsemenov/Magnific-Popup
-
-Thanks for downloading from TemplatesJungle.com !
+git clone https://github.com/seu-usuario/juventude-abel-gincana.git
 
 
+Configure o banco de dados MySQL com as tabelas:
+
+CREATE TABLE admins (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  usuario VARCHAR(100) NOT NULL,
+  senha VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE juventude (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(150),
+  idade INT,
+  email VARCHAR(150),
+  senha VARCHAR(255),
+  telefone VARCHAR(50),
+  comunidade VARCHAR(150),
+  paroquia VARCHAR(150),
+  alergias TEXT,
+  medicamentos TEXT,
+  data_inscricao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+Atualize as credenciais do banco nos arquivos PHP ($host, $user, $pass, $dbname).
+
+Inicie um servidor local (XAMPP, WAMP ou Laragon).
+
+Acesse no navegador:
+
+Site público: http://localhost/index.php
+Admin: http://localhost/login.php
+
+📂 Estrutura do projeto
+.
+├── index.php                 # Página inicial (gincana, doações, galeria)
+├── login.php                 # Tela de login admin
+├── logout.php                # Logout admin
+├── valida_login.php          # Validação de login
+├── visualizar_inscricoes.php # Painel de inscrições
+├── processar_inscricao.php   # Processa inscrição do formulário
+├── menu.php                  # Cabeçalho e navegação
+├── css/                      # Estilos
+├── js/                       # Scripts
+├── img/                      # Imagens do site
+│   ├── galeria/              # Fotos para galeria dinâmica
+│   └── atividades/           # Ícones das atividades
+└── README.md
+
+💖 Apoie a Juventude Abel
+
+A Juventude Abel utiliza 100% das doações para promover a fé entre os jovens.
+No site há botões de doação (R$ 5, R$ 10, R$ 20 e R$ 50) via Mercado Pago.
