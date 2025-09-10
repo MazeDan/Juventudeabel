@@ -1,7 +1,6 @@
 # 📖 Juventude Abel – Gincana Bíblica
 
 Este repositório contém o código-fonte do site e do sistema de inscrições da **Gincana Bíblica da Juventude Abel**, evento realizado em setembro para jovens da comunidade.
-
 ---
 
 ## ✨ Funcionalidades
